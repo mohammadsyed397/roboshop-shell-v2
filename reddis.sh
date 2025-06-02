@@ -1,5 +1,6 @@
 #!/bin/bash
-source ./common.sh
+$App_name=reddis
+source ./common.sh $App_name
 is_user_root
 dnf module disable redis -y &>>$LOG_FILE
 VALIDATE $? "Disabling default redis module"

@@ -1,6 +1,6 @@
 #!/bin/bash
-
-source ./common.sh
+$App_name=rabbitmq
+source ./common.sh $App_name
 is_user_root
 cp repos/rabbitmq.repo /etc/yum.repos.d/rabbitmq.repo
 
